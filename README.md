@@ -48,10 +48,10 @@ To test the application on Postman or in OpenAPI
 ## RESULTS
 
 #### Client Vs. Oracle VM Time to complete request
-![](src/main/resources/images/Oracle Client.png)
+![](src/main/resources/images/Oracle-Client.png)
 
 #### Client Vs. Localhost Time to complete request
-![](src/main/resources/images/localhost client.png)
+![](src/main/resources/images/localhost-client.png)
 
 #### Create Audio Item - OpenAPI
 ![](src/main/resources/images/post-create.png)
