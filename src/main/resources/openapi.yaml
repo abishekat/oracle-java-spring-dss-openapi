@@ -1,0 +1,129 @@
+openapi: 3.0.1
+info:
+  version: '1.0'
+  title: COEN 6731 - ASSIGNMENT 1 - ABISHEK AT
+  description: 'Creating OpenAPI documentation of an audio resource with swagger'
+servers:
+  - url: http://localhost:8080
+    description: Development server
+  - url: http://155.248.235.48:8080
+    description: Deployment server
+paths:
+  /api/audio/create:
+    post:
+      tags:
+        - apiaudio
+      summary: Creates an audio item
+      description: Creates an audio item
+      operationId: createAudioItem
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AudioItem'
+        required: true
+      responses:
+        '200':
+          description: OK
+  /api/audio/copies-sold:
+    get:
+      tags:
+        - apiaudio
+      summary: Get number of copies sold
+      description: Returns number of copies sold
+      operationId: numberofCopiesSold
+      responses:
+        '200':
+          description: OK
+  /api/audio/artists/{id}:
+    get:
+      tags:
+        - apiaudio
+      summary: Get a artist by ID
+      description: Returns artist by ID
+      operationId: findArtistsbyId
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  /api/audio/artist/{name}:
+    get:
+      tags:
+        - apiaudio
+      summary: Get artists by name
+      description: Returns artists by name
+      operationId: findArtistsbyName
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  /api/audio/artist/{name}/{property}:
+    get:
+      tags:
+        - apiaudio
+      summary: Get artists by name and a property
+      description: Returns artists by name and a property
+      operationId: findArtistsByNameByProperty
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: property
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /api/audio/all/artists:
+    get:
+      tags:
+        - apiaudio
+      summary: Get all artists
+      description: Returns all artists
+      operationId: findAllArtists
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+components:
+  schemas:
+    AudioItem:
+      type: object
+      properties:
+        id:
+          type: string
+        trackTitle:
+          type: string
+        albumTitle:
+          type: string
+        trackNumber:
+          type: string
+        year:
+          type: string
+        numberOfReviews:
+          type: string
+        noOfCopiesSold:
+          type: string
+        artistName:
+          type: string
