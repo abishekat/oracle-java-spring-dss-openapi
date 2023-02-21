@@ -41,8 +41,8 @@ To test the application on Postman or in OpenAPI
    ```
    
 # OpenAPI
-#### OpenAPI test works only for cloud deployment. Does not work for localhost.
-#### for localhost openapi test to work run the spring application and got to [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+#### OpenAPI test works only for cloud deployment. Does not work for localhost. Because of firewall conflict on port 22.
+#### For localhost openapi test to work run the spring application and got to [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
 
 
 ## RESULTS
