@@ -62,11 +62,14 @@ To test the application on Postman or in OpenAPI
 ####  Get: Artist by ID – OpenAPI
 ![](src/main/resources/images/get_id.png)
 
-####  Get: Artist by ID and Property – OpenAPI
-![](src/main/resources/images/get_id.png)
+####  Get: Artist by name and Property – OpenAPI
+![](src/main/resources/images/name-property.png)
 
 ####  Get: Artist by Name – OpenAPI
-![](src/main/resources/images/get_id.png)
+![](src/main/resources/images/get-name.png)
+
+####  Get: All Artist in JSON– OpenAPI
+![](src/main/resources/images/all-artist-json.png)
 
 ####  Get: Copies sold before creating and audio item.
 ![](src/main/resources/images/before-copies-sold.png)
