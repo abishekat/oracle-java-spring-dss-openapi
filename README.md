@@ -5,7 +5,7 @@
 # Running the Application in Eclipse
 #### Prerequisites: Eclipse IDE plugins Buildship Gradle Integration 3.0, Spring Tools 3, Git, Java 17 or greater, Maven 3.9 or higher and Gradle 7.6 or higher.
 
-1. Open Git Perspective in Eclipse and clone this [repository](https://github.com/abishekat/oracle-spring-dss-assignment-1)
+1. Open Git Perspective in Eclipse and clone this [repository]([https://github.com/abishekat/oracle-spring-dss-assignment-1](https://github.com/abishekat/dss-assignment-1))
 
 2. Import the project into project explorer.
 
